@@ -3,8 +3,6 @@
 #define WSMAN_API_VERSION_1_0
 #include <wsman.h>
 #include <cstdio>
-#include <vector>
-#include "detours.h"
 
 #define BOF_IMPORT(ret, call, dll, name, ...)\
     extern "C" __declspec(dllimport) ret call dll##$##name(__VA_ARGS__);
